@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafe</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="contenedor"> <!--Contenedor de la barra y el logo sobre la imagen-->
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1> <!--Span es una etiqueta para darle un diseño especial al texto-->
+                </a>
+
+                <nav class="navegacion"> <!--Contenedor de la barra de navegacion sobre la imagen-->
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a> <!--a.navegacion_enlace*3 me permite crear los 3 elementos iguales-->
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de cafe con consejos y cursos</h2> <!--Clase no-margin para que no agrege margenes al texto-->
+            <p class="no-margin">Aprende con los expertos con las mejores recetas</p>
+        </div>
+        
+    </header>
+
+    <main class="contenedor"> <!--Contenedor para que quede centrado horizontalmente-->
+       <h3 class="centrar-texto">Contacto</h3>
+
+       <div class="contacto-bg"></div>
+
+       <form class="formulario">
+        <div class="campo">
+                <label class="campo_label" for="nombre">Nombre</label> <!--For para que al pinchar el texto nombre se dirija al espacio correspondiente-->
+                <input 
+                class="campo__field" 
+                type="text" 
+                placeholder="Tu Nombre" 
+                id="nombre"> <!--Id para poder colocarlo en el for-->
+        </div>
+
+        <div class="campo">
+            <label class="campo_label" for="email">Correo E</label> <!--For para que al pinchar el texto nombre se dirija al espacio correspondiente-->
+            <input 
+            class="campo__field" 
+            type="email" 
+            placeholder="Correo Electronico" 
+            id="email"> <!--Id para poder colocarlo en el for-->
+    </div>
+
+        <div class="campo">
+            <label class="campo_label" for="Mensaje">Mensaje</label> <!--For para que al pinchar el texto se dirija al espacio correspondiente-->
+            <textarea
+            class="campo__field campo__field--textarea" 
+            id="mensaje"></textarea>
+        </div>
+
+        <div class="campo">
+            <input type="submit" value="Enviar" class="boton boton--primario">
+        </div>
+        
+
+       </form>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1> <!--Span es una etiqueta para darle un diseño especial al texto-->
+                </a>
+
+                <nav class="navegacion"> <!--Contenedor de la barra de navegacion sobre la imagen-->
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a> <!--a.navegacion_enlace*3 me permite crear los 3 elementos iguales-->
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script> <!--Codigo para cargar la pagina de modernizer y que asi me lea el codigo de webp en css para cargar la imagen-->
+
+</body>
+</html>
